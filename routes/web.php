@@ -14,12 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $fullname = 'Domenico Galileo';
-    return view('home', compact('fullname'));
-});
+    $languages = ['PHP', 'JS', 'CSS'];
+    return view('home', compact('languages'));
+})->name('home');
 
 Route::get('/posts', function () {
-    $posts = ['learn php', 'learn phiton', 'learn css'];
-    return view('posts', compact('posts'));
+    return view('posts');
 })->name('posts');
+
+Route::get('/php', function () {
+    return view('php');
+})->name('php');
+
+Route::get('/css', function () {
+    return view('css');
+})->name('css');
+
+Route::get('/js', function () {
+    return view('js');
+})->name('js');
 

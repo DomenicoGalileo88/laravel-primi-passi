@@ -15,14 +15,33 @@
         .text_center {
             text-align: center;
         }
+
+        .bg_blue {
+            background-color: cornflowerblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 1rem;
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="text_center">Hello Laravel</h1>
-    <h2 class="text_center">My name is {{ $fullname }}</h2>
+    <nav class="text_center bg_blue">
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('posts') }}">Posts</a>
 
-    <a href="{{ route('posts') }}">Home</a>
+    </nav>
+
+    <main>
+        <h1 class="text_center">Learn posts:</h1>
+        @foreach($languages as $language)
+        <h2 class="text_center"> {{ $language }}</h2>
+        @endforeach
+    </main>
+
 </body>
 
 </html>
