@@ -18,3 +18,8 @@ Route::get('/', function () {
     return view('home', compact('fullname'));
 });
 
+Route::get('/posts', function () {
+    $posts = ['learn php', 'learn phiton', 'learn css'];
+    return view('posts', compact('posts'));
+})->name('posts');
+

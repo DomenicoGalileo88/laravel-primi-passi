@@ -21,6 +21,8 @@
 <body>
     <h1 class="text_center">Hello Laravel</h1>
     <h2 class="text_center">My name is {{ $fullname }}</h2>
+
+    <a href="{{ route('posts') }}">Home</a>
 </body>
 
 </html>
