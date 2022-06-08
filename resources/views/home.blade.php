@@ -12,14 +12,15 @@
 
     <!-- Styles -->
     <style>
-        .title{
+        .text_center {
             text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="title">Hello Laravel</h1>
+    <h1 class="text_center">Hello Laravel</h1>
+    <h2 class="text_center">My name is {{ $fullname }}</h2>
 </body>
 
 </html>
