@@ -31,7 +31,7 @@
 <body>
     <nav class="text_center bg_blue">
         <a href="{{ route('home') }}">Home</a>
-        <a href="{{ route('posts') }}">Posts</a>
+        <a href="/posts">Posts</a>
 
     </nav>
 
